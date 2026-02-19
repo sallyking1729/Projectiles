@@ -2,10 +2,34 @@
 //
 
 #include <iostream>
+#include<cmath>
+using namespace std;
+
+double h_velocity(double int_velocity, double int_angle)
+{
+    return int_velocity * cos(int_angle);
+}
+
+double v_velocity(double int_velocity, double int_angle)
+{
+    return int_velocity * sin(int_angle);
+}
 
 int main()
 {
-    std::cout << "Hello World3!\n";
+
+    double int_vel;
+    double int_angle;
+
+
+    cout << "What is the initial velocity? ";
+    cin >> int_vel;
+
+    cout << "What is the initial angle?";
+    cin >> int_angle;
+
+    return 0;
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
